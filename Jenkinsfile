@@ -1,11 +1,11 @@
 pipeline {
     agent any 
     environment {
-        //TODO # 1 --> once you sign up for Docker hub, use that user_id here
-        registry = "ananthkannan/myphp-app-may20"
-        //TODO #2 - update your credentials ID after creating credentials for connecting to Docker Hub
-        registryCredential = 'fa32f95a-2d3e-4c7b-8f34-11bcc0191d70'
-        dockerImage = ''
+       AWS_ACCOUNT_ID="216147165517"
+       AWS_DEFAULT_REGION="us-east-2"
+       IMAGE_REPO_NAME="nodejs-image-repo"
+       IMAGE_TAG="216147165517.dkr.ecr.us-east-2.amazonaws.com/nodejs-image-repo:latest"
+       REPOSITORY_URL="216147165517.dkr.ecr.us-east-2.amazonaws.com/nodejs-image-repo"
     }
     
     stages {
