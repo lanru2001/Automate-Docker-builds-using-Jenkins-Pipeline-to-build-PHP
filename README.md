@@ -1,6 +1,6 @@
 # Automated-jenkins-pipeline-to-build-PHP-application
 
-# Welcome to README file for dockersing a simple PHP App
+# Welcome to README file for dockerizing a simple PHP App
 ```bash
 sudo docker build . -t your_docker_user_id/myphpapp
 sudo docker images
