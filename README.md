@@ -6,16 +6,21 @@ sudo docker build . -t your_docker_user_id/myphpapp
 sudo docker images
 sudo docker login
 sudo docker push your_docker_user_id/myphpapp
+```bash
 
 
 # How to run application?
+```bash
 sudo docker run -p 8082:80 --rm --name myfirstApp1 your_docker_user_id/myphpapp
+```bash
 
+```bash
 # if you would like to run on differet port 
 sudo docker run -p 8092:80 --rm --name myfirstApp2 your_docker_user_id/myphpapp
+```bash
 
+```bash
 # sample commands for reference:( you dont have to execute, please refer them)
-
 sudo docker images 
 sudo docker search ubuntu – search the image in docker registry
 sudo docker pull ubuntu
